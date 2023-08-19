@@ -1,5 +1,5 @@
 -- Gerado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   em:        2023-08-18 23:53:15 BRT
+--   em:        2023-08-19 13:50:31 BRT
 --   site:      Oracle Database 11g
 --   tipo:      Oracle Database 11g
 
@@ -48,7 +48,7 @@ ALTER TABLE gravidade_acidentes ADD CONSTRAINT pk_goc PRIMARY KEY ( goc_grv_id,
 
 CREATE TABLE local (
     lcl_id INTEGER NOT NULL,
-    lcl_km FLOAT NOT NULL
+    lcl_km FLOAT(10) NOT NULL
 );
 
 COMMENT ON TABLE local IS
