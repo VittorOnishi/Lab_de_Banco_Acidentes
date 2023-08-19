@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97D2742D-1ABA-5677-EED5-9CB9E92033A4" containerWithKeyObject="FDFFCA33-6259-9E11-F24A-B661449B0394" localFKIndex="4334D612-ECA9-4A84-0197-D49CF24C4FFB" name="FK_OCR_SNT">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<generatorID>B20D8ABD-258F-7FAE-10EA-1E1AB7CA7CEF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<referredTableLongName>Sentido</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>965F5FDC-4518-D6F6-4500-5CE9BD5B6922</referredTableID>
+<keyObject>9A7A6892-9345-52FD-3F4A-476541CFE8AA</keyObject>
+<referredKeyID>9A7A6892-9345-52FD-3F4A-476541CFE8AA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>snt_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

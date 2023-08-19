@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A9952D4-BBE6-B7BD-00AD-8A91027E1D91" name="Ocorrencias">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 02:46:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de ocorrencias de acidente de transito na BR-381]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ocr id" id="1A0E0F1D-E11F-7929-CA8A-317E26D8B6F9">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:06:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela ocorrencias]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr data" id="B0E10FFB-8BE4-7B13-551A-195BC698C6E1">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:06:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr horario" id="0A39FF0E-9A46-70EF-0123-80EAAACF63CF">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:07:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Horario da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr nr ocorrencia" id="3D550022-D095-A444-CA62-38624F0CAD74">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:08:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr lcl id" id="7C216E8D-4C26-17A6-F5D0-6C1ADFB80F8A">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:17:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Local]]></commentInRDBMS>
+<generatorID>30C03040-D995-653E-48E7-1E8DCC352A1D</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<referedAttribute>1E2CCF6A-384A-15DA-FD96-3FFC5AA1D31F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tdo id" id="1B400ED6-A615-E0AF-E9F5-00FF8A56011E">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:19:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Tipo_de_ocorrencia]]></commentInRDBMS>
+<generatorID>8020ED22-C47D-EA5B-2674-37E7CB0139BF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<referedAttribute>F953304B-FE35-D488-80A8-17A105623ABE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr tda id" id="8AD7CCA0-05E4-21F6-92B6-9CDB5C909FB1">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Tipo_de_acidente]]></commentInRDBMS>
+<generatorID>7435BE97-0884-4A6E-E880-6BCBBA041BCC</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<referedAttribute>497A6CFC-7795-77D6-5AE0-C1FB2E0849E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr snt id" id="41A9E5F6-CEE3-F601-B94A-7829B387FA94">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:24:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Sentido]]></commentInRDBMS>
+<generatorID>B20D8ABD-258F-7FAE-10EA-1E1AB7CA7CEF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<referedAttribute>98C18A21-2391-B50D-35E1-B61B04838A8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr trc id" id="9339F76E-3237-4F45-268E-34D81D09981C">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-18 16:33:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Trecho]]></commentInRDBMS>
+<generatorID>C6A63855-3EAD-A958-C5AD-9A5A4126D1AD</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<referedAttribute>27BD39F8-3A38-3F8B-0EB9-5AC8188558F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7BDC224-68F8-44FB-D055-3096A8B43A73" name="PK_ORC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:06:28 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A0E0F1D-E11F-7929-CA8A-317E26D8B6F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

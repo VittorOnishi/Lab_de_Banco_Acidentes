@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK OCR SNT" directorySegmentName="seg_0" id="B20D8ABD-258F-7FAE-10EA-1E1AB7CA7CEF">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:24:07 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<sourcePk>73F57C21-8C8F-A927-32BE-820E92440782</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F61AC16D-B376-B9EF-5151-E6039F6F2B85</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9A9952D4-BBE6-B7BD-00AD-8A91027E1D91</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

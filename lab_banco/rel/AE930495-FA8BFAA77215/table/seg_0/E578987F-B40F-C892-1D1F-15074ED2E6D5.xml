@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E578987F-B40F-C892-1D1F-15074ED2E6D5" name="Veiculos_ocorrencias">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de tipos e quantidades de veiculos envolvidos em ocorrencias]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="voc_ocr_id" id="50168A7D-54D8-07AD-6F2F-D001C24C30C5">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[PFK referenciando tabela de Ocorrencias]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12B20910-BB12-923F-C98D-98EEDEF37E19" referredColumn="AD814CB0-569B-3EBA-8A01-389A51ECC27C"/>
+</associations>
+</Column>
+<Column name="voc_vei_id" id="2A3B83DB-3E47-B655-064A-2A41A0F5EFC0">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[PFK referenciando tabela de Veiculos]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A76E39F-C591-2AE1-BD6B-692F666833DB" referredColumn="13C3EF0F-9648-3A7F-3B84-029AB511A558"/>
+</associations>
+</Column>
+<Column name="voc_qtde_veiculos" id="03400BA9-7778-59F0-25E4-7E213B4880AD">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 04:05:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de veiculos envolvida na ocorrencia]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BBEFB6E-B756-067E-4204-BB13EC912179" name="PK_VOC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50168A7D-54D8-07AD-6F2F-D001C24C30C5"/>
+<colUsage columnID="2A3B83DB-3E47-B655-064A-2A41A0F5EFC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CAFA68D-8363-BB38-0F2B-0C94526A64CA" name="FK_VOC_OCR">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>4594795F-DFD9-BDCE-D074-FB5F9FAEEF24</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50168A7D-54D8-07AD-6F2F-D001C24C30C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BABD0A0E-B437-2BDD-1AB7-A7002C78D52D" name="FK_VOC_VEI">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>4594795F-DFD9-BDCE-D074-FB5F9FAEEF24</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A3B83DB-3E47-B655-064A-2A41A0F5EFC0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F61AC16D-B376-B9EF-5151-E6039F6F2B85" name="Sentido">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:23:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro dos sentidos que a rodovia BR-381 possui]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="snt id" id="98C18A21-2391-B50D-35E1-B61B04838A8F">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:23:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela Sentido]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="snt descricao" id="0225461B-B4A7-5690-27B7-EE6CC68037F0">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sentido que se deu a ocorrencia]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73F57C21-8C8F-A927-32BE-820E92440782" name="PK_SNT">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:23:23 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>98C18A21-2391-B50D-35E1-B61B04838A8F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDFFCA33-6259-9E11-F24A-B661449B0394" name="Ocorrencias">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de ocorrencias de acidente de transito na BR-381]]></commentInRDBMS>
+<generatorID>9A9952D4-BBE6-B7BD-00AD-8A91027E1D91</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ocr_id" id="AD814CB0-569B-3EBA-8A01-389A51ECC27C">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela ocorrencias]]></commentInRDBMS>
+<generatorID>1A0E0F1D-E11F-7929-CA8A-317E26D8B6F9</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ocr_data" id="1B31C7DA-6487-3D9C-B3D0-1AD7E8E5D85C">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da ocorrencia]]></commentInRDBMS>
+<generatorID>B0E10FFB-8BE4-7B13-551A-195BC698C6E1</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ocr_horario" id="EA7FCAC7-C61A-8AB8-F94A-09EB00E078A8">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Horario da ocorrencia]]></commentInRDBMS>
+<generatorID>0A39FF0E-9A46-70EF-0123-80EAAACF63CF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ocr_nr_ocorrencia" id="CE92A3FF-D155-BF5E-520F-7BCFC6EE7725">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero da ocorrencia]]></commentInRDBMS>
+<generatorID>3D550022-D095-A444-CA62-38624F0CAD74</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ocr_lcl_id" id="097CB68B-BBC1-4A30-30EE-1367DA7556EC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Local]]></commentInRDBMS>
+<generatorID>7C216E8D-4C26-17A6-F5D0-6C1ADFB80F8A</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24EC9A90-6FCD-D6FC-81A7-7477E439ECDA" referredColumn="DE9D5073-5FF0-7A7F-93F1-1A753767B602"/>
+</associations>
+</Column>
+<Column name="ocr_tdo_id" id="09C703F2-BD25-9F93-F3B9-6B7D28BA4052">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Tipo_de_ocorrencia]]></commentInRDBMS>
+<generatorID>1B400ED6-A615-E0AF-E9F5-00FF8A56011E</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4EA5DE7-319A-4BB3-AFFD-E7C918F9783C" referredColumn="14E13691-1FFA-09AE-FA26-E7B21A236547"/>
+</associations>
+</Column>
+<Column name="ocr_tda_id" id="346B8AF8-AC0D-2F16-5FD4-F01A4A819E33">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Tipo_de_acidente]]></commentInRDBMS>
+<generatorID>8AD7CCA0-05E4-21F6-92B6-9CDB5C909FB1</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97817761-C30E-1AE4-B7DA-0B1EAB194B62" referredColumn="63789214-3EEF-ECF5-5CB9-2C6BAA81600E"/>
+</associations>
+</Column>
+<Column name="ocr_snt_id" id="FD2E141A-2DA1-CB88-0BF5-22B2CF2E84D2">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Sentido]]></commentInRDBMS>
+<generatorID>41A9E5F6-CEE3-F601-B94A-7829B387FA94</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97D2742D-1ABA-5677-EED5-9CB9E92033A4" referredColumn="6609AD5B-A659-373E-7205-E5CE01D167AF"/>
+</associations>
+</Column>
+<Column name="ocr_trc_id" id="2913B71D-252C-5E55-C41A-44BCC84E0035">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-18 16:34:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira referenciando a tabela Trecho]]></commentInRDBMS>
+<generatorID>9339F76E-3237-4F45-268E-34D81D09981C</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C9AC5F1-A03D-0440-18BF-D3BCE6172538" referredColumn="DB9735D2-6B45-F5E2-0AA8-F150BD8E03CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D5903CE-BE87-A71D-9A69-01B1E312AA84" name="PK_ORC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>C7BDC224-68F8-44FB-D055-3096A8B43A73</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD814CB0-569B-3EBA-8A01-389A51ECC27C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9512424D-D45D-2316-7587-89A818059D7C" name="FK_OCR_LCL">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>30C03040-D995-653E-48E7-1E8DCC352A1D</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="097CB68B-BBC1-4A30-30EE-1367DA7556EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4234B3B7-1217-5A12-CDF7-8351CE181511" name="FK_OCR_TDA">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>7435BE97-0884-4A6E-E880-6BCBBA041BCC</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346B8AF8-AC0D-2F16-5FD4-F01A4A819E33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5E7F7FB-7B27-F562-8263-425179595BFE" name="FK_OCR_TDO">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>8020ED22-C47D-EA5B-2674-37E7CB0139BF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C703F2-BD25-9F93-F3B9-6B7D28BA4052"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4334D612-ECA9-4A84-0197-D49CF24C4FFB" name="FK_OCR_SNT">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<generatorID>B20D8ABD-258F-7FAE-10EA-1E1AB7CA7CEF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD2E141A-2DA1-CB88-0BF5-22B2CF2E84D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BE38436-FEE2-2741-7CC3-A85C0EA84B39" name="FK_OCR_TRC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-18 16:34:03 UTC</createdTime>
+<generatorID>C6A63855-3EAD-A958-C5AD-9A5A4126D1AD</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2913B71D-252C-5E55-C41A-44BCC84E0035"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

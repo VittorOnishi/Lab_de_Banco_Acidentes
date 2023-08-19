@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7DAE5AF0-019D-ABD9-2610-5C445CF9A1CB" name="Trecho">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:26:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro dos trechos que a BR-381 possui]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="trc id" id="27BD39F8-3A38-3F8B-0EB9-5AC8188558F0">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:26:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela de Trecho]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trc descricao" id="2B95A737-ABC5-54C2-543F-FFA4C472E9A3">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:26:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Trecho da BR-381]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0C83C1C8-6D5A-2B8B-73E7-D3A6563F2499" name="PK_TRC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:26:39 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>27BD39F8-3A38-3F8B-0EB9-5AC8188558F0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

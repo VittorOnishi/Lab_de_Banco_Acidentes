@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Gravidade_acidentes" directorySegmentName="seg_0" id="C150FDBA-E9A2-ABA5-214D-C82037795A10">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:18:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro da gravidade das ocorrencias e contabilizacao de vitimas]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E063AC31-6428-F2C0-2BEB-3C12C684F288</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9A9952D4-BBE6-B7BD-00AD-8A91027E1D91</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="goc qtde vitimas" id="FE8C1D85-C3B0-091F-9026-A8D012AFE132">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-18 22:25:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de vitimas na ocorrencia de acidente]]></commentInRDBMS>
+<generatorID>0AE46BA1-9C32-3581-DBA5-E7BB7A4DC8BA</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

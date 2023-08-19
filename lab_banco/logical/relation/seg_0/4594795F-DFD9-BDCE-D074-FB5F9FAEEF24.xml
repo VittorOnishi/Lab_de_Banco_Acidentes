@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Veiculos_ocorrencias" directorySegmentName="seg_0" id="4594795F-DFD9-BDCE-D074-FB5F9FAEEF24">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 02:55:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de tipos e quantidades de veiculos envolvidos em ocorrencias]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>9A9952D4-BBE6-B7BD-00AD-8A91027E1D91</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>34E590CC-AB17-DC30-35D2-6E5122A6802F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="voc qtde veiculos" id="82911E2D-EB06-28CD-FF78-D5C39B23CC84">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-18 22:25:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de veiculos envolvida na ocorrencia]]></commentInRDBMS>
+<generatorID>03400BA9-7778-59F0-25E4-7E213B4880AD</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

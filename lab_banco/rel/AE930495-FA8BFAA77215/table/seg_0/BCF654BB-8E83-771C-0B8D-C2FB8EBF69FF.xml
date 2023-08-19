@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BCF654BB-8E83-771C-0B8D-C2FB8EBF69FF" name="Tipo_de_ocorrencia">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro dos tipos que uma ocorrencia pode  possuir]]></commentInRDBMS>
+<generatorID>A8E1D25E-F477-65A0-A5D6-B88C8B5BA793</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tdo_id" id="14E13691-1FFA-09AE-FA26-E7B21A236547">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela de Tipo_de_ocorrencia]]></commentInRDBMS>
+<generatorID>F953304B-FE35-D488-80A8-17A105623ABE</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tdo_descricao" id="FD90268D-C19A-7CB9-CB71-BF644076D9E3">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo da ocorrencia]]></commentInRDBMS>
+<generatorID>A7D822A0-D100-1AF2-F8C0-BC425858718C</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DC45FC02-7CA9-43D2-67B5-C22AD1AA546E" name="PK_TDO">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>BA3167D7-AD9A-7CB2-AD88-16390E394DB8</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14E13691-1FFA-09AE-FA26-E7B21A236547"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

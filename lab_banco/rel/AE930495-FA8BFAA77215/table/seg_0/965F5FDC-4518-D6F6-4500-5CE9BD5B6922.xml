@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="965F5FDC-4518-D6F6-4500-5CE9BD5B6922" name="Sentido">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro dos sentidos que a rodovia BR-381 possui]]></commentInRDBMS>
+<generatorID>F61AC16D-B376-B9EF-5151-E6039F6F2B85</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="snt_id" id="6609AD5B-A659-373E-7205-E5CE01D167AF">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela Sentido]]></commentInRDBMS>
+<generatorID>98C18A21-2391-B50D-35E1-B61B04838A8F</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="snt_descricao" id="DEB8E8BD-B617-7752-E8F1-BB0C7F08A9C8">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sentido que se deu a ocorrencia]]></commentInRDBMS>
+<generatorID>0225461B-B4A7-5690-27B7-EE6CC68037F0</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9A7A6892-9345-52FD-3F4A-476541CFE8AA" name="PK_SNT">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:25:32 UTC</createdTime>
+<generatorID>73F57C21-8C8F-A927-32BE-820E92440782</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6609AD5B-A659-373E-7205-E5CE01D167AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

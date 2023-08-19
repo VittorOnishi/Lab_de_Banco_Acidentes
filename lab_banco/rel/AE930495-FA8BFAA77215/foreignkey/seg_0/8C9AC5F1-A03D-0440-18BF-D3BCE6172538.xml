@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8C9AC5F1-A03D-0440-18BF-D3BCE6172538" containerWithKeyObject="FDFFCA33-6259-9E11-F24A-B661449B0394" localFKIndex="4BE38436-FEE2-2741-7CC3-A85C0EA84B39" name="FK_OCR_TRC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-18 16:34:03 UTC</createdTime>
+<generatorID>C6A63855-3EAD-A958-C5AD-9A5A4126D1AD</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<referredTableLongName>Trecho</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0228B1E2-4F88-CC86-A6B9-573F6C15C409</referredTableID>
+<keyObject>61DA30B1-27B3-7428-A5B4-65E3344A6392</keyObject>
+<referredKeyID>61DA30B1-27B3-7428-A5B4-65E3344A6392</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>trc_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

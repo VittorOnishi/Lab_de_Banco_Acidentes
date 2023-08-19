@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK OCR TRC" directorySegmentName="seg_0" id="C6A63855-3EAD-A958-C5AD-9A5A4126D1AD">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:27:03 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<sourcePk>0C83C1C8-6D5A-2B8B-73E7-D3A6563F2499</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7DAE5AF0-019D-ABD9-2610-5C445CF9A1CB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9A9952D4-BBE6-B7BD-00AD-8A91027E1D91</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

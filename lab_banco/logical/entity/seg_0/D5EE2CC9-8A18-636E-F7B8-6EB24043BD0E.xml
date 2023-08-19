@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D5EE2CC9-8A18-636E-F7B8-6EB24043BD0E" name="Tipo de acidente">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 02:50:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro dos tipos que acidentes podem possuir]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tda id" id="497A6CFC-7795-77D6-5AE0-C1FB2E0849E2">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:14:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela Tipo_de_acidente]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tda descricao" id="C2D014CB-4B45-ABCA-4F92-9378BB587575">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:15:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do acidente]]></commentInRDBMS>
+<ownerDesignName>lab_banco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D84276EB-B895-2BE2-6BAC-20901330F7D3" name="PK_TDA">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:15:02 UTC</createdTime>
+<ownerDesignName>lab_banco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>497A6CFC-7795-77D6-5AE0-C1FB2E0849E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

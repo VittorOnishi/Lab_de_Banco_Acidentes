@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A4EA5DE7-319A-4BB3-AFFD-E7C918F9783C" containerWithKeyObject="FDFFCA33-6259-9E11-F24A-B661449B0394" localFKIndex="C5E7F7FB-7B27-F562-8263-425179595BFE" name="FK_OCR_TDO">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>8020ED22-C47D-EA5B-2674-37E7CB0139BF</generatorID>
+<ownerDesignName>lab_banco</ownerDesignName>
+<referredTableLongName>Tipo_de_ocorrencia</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BCF654BB-8E83-771C-0B8D-C2FB8EBF69FF</referredTableID>
+<keyObject>DC45FC02-7CA9-43D2-67B5-C22AD1AA546E</keyObject>
+<referredKeyID>DC45FC02-7CA9-43D2-67B5-C22AD1AA546E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tdo_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
