@@ -1,7 +1,7 @@
 -- Gerado por Oracle SQL Developer Data Modeler 22.2.0.165.1149
---   em:        2023-08-19 13:50:31 BRT
---   site:      Oracle Database 11g
---   tipo:      Oracle Database 11g
+--   em:        2023-08-25 19:59:01 BRT
+--   site:      Oracle Database 12cR2
+--   tipo:      Oracle Database 12cR2
 
 
 
