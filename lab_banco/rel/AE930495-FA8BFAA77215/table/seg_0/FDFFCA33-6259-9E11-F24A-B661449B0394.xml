@@ -21,7 +21,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ocr_data" id="1B31C7DA-6487-3D9C-B3D0-1AD7E8E5D85C">
+<Column name="ocr_data_hora" id="1B31C7DA-6487-3D9C-B3D0-1AD7E8E5D85C">
 <createdBy>vitto</createdBy>
 <createdTime>2023-08-16 03:22:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data da ocorrencia]]></commentInRDBMS>
@@ -30,18 +30,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ocr_horario" id="EA7FCAC7-C61A-8AB8-F94A-09EB00E078A8">
-<createdBy>vitto</createdBy>
-<createdTime>2023-08-16 03:22:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Horario da ocorrencia]]></commentInRDBMS>
-<generatorID>0A39FF0E-9A46-70EF-0123-80EAAACF63CF</generatorID>
-<ownerDesignName>lab_banco</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT014</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
