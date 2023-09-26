@@ -1,0 +1,56 @@
+create trigger tg_seq_ocr
+before insert on Ocorrencias
+for each row
+begin
+    :new.ocr_id := seq_ocr.nextval;
+end;
+
+create trigger tg_seq_lcl
+before insert on Local
+for each row
+begin
+    :new.lcl_id := seq_lcl.nextval;
+end;
+
+create trigger tg_seq_trc
+before insert on Trecho
+for each row
+begin
+    :new.trc_id := seq_trc.nextval;
+end;
+
+create trigger tg_seq_tdo
+before insert on Tipo_de_ocorrencia
+for each row
+begin
+    :new.tdo_id := seq_tdo.nextval;
+end;
+
+create trigger tg_seq_tda
+before insert on Tipo_de_acidente
+for each row
+begin
+    :new.tda_id := seq_tda.nextval;
+end;
+
+create trigger tg_seq_grv
+before insert on Gravidade
+for each row
+begin
+    :new.grv_id := seq_grv.nextval;
+end;
+
+create trigger tg_seq_snt
+before insert on Sentido
+for each row
+begin
+    :new.snt_id := seq_snt.nextval;
+end;
+
+create trigger tg_seq_vei
+before insert on Veiculos
+for each row
+begin
+    :new.vei_id := seq_vei.nextval;
+end;
+
