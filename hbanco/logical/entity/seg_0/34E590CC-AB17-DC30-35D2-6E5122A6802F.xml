@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34E590CC-AB17-DC30-35D2-6E5122A6802F" name="hVeiculos">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 02:52:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de tipos de veiculos]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hvei id" id="EE485FA9-D0FA-31C8-7CBA-C8C195895AB1">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:11:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela de Veiculos]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hvei tipo" id="2E7C5A30-C350-E2C4-3B83-A7D40EB4D77D">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:12:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do veiculo]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hvei dt entrada" id="6741E884-D057-C92F-A478-BCDD93DAD4F3">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:12:12 UTC</createdTime>
+<generatorID>6ED94326-4D63-C7B1-28E2-E54C79F14252</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7CDA0E0F-42AE-B864-E7D8-DAFBA19A8107" name="PK_VEI">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:12:06 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE485FA9-D0FA-31C8-7CBA-C8C195895AB1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

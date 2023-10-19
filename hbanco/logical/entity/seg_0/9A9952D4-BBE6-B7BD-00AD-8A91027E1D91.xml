@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A9952D4-BBE6-B7BD-00AD-8A91027E1D91" name="hOcorrencias">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 02:46:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de ocorrencias de acidente de transito na BR-381]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hocr id" id="1A0E0F1D-E11F-7929-CA8A-317E26D8B6F9">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:06:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela ocorrencias]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hocr data hora" id="B0E10FFB-8BE4-7B13-551A-195BC698C6E1">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:06:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ocr horario" id="0A39FF0E-9A46-70EF-0123-80EAAACF63CF">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:07:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Horario da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hocr nr ocorrencia" id="3D550022-D095-A444-CA62-38624F0CAD74">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:08:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hocr dt entrada" id="0A95E4C9-D6DC-0BF5-AB0C-6CF6E2972C87">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:12:12 UTC</createdTime>
+<generatorID>43EA5F74-26AA-6EE5-A29F-E53713693305</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7BDC224-68F8-44FB-D055-3096A8B43A73" name="PK_ORC">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:06:28 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A0E0F1D-E11F-7929-CA8A-317E26D8B6F9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

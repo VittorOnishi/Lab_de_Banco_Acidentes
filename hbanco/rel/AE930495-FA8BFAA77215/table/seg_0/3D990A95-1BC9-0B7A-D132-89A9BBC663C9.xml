@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D990A95-1BC9-0B7A-D132-89A9BBC663C9" name="hVeiculos">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro de tipos de veiculos]]></commentInRDBMS>
+<generatorID>34E590CC-AB17-DC30-35D2-6E5122A6802F</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<ordsAlias>veiculos</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hvei_id" id="13C3EF0F-9648-3A7F-3B84-029AB511A558">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela de Veiculos]]></commentInRDBMS>
+<generatorID>EE485FA9-D0FA-31C8-7CBA-C8C195895AB1</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hvei_tipo" id="78A39034-908E-16C5-F525-D7ED69F24C2D">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo do veiculo]]></commentInRDBMS>
+<generatorID>2E7C5A30-C350-E2C4-3B83-A7D40EB4D77D</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hvei_dt_entrada" id="6ED94326-4D63-C7B1-28E2-E54C79F14252">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:10:04 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D233D9A-4CC6-2E01-1573-B1CC58489F19" name="PK_HVEI">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>7CDA0E0F-42AE-B864-E7D8-DAFBA19A8107</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13C3EF0F-9648-3A7F-3B84-029AB511A558"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

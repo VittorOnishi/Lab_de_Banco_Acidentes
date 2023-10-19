@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E063AC31-6428-F2C0-2BEB-3C12C684F288" name="hGravidade">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:00:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro das gravidades que ocorrencias podem possuem]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hgrv id" id="0AAF2C74-35A9-7648-506B-751346383548">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:13:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela Gravidade]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hgrv descricao" id="59D6ADA6-7A8C-5701-AF2B-C8BE7E114466">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:13:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descricao da gravidade da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hgrv dt entrada" id="8D6D1162-221F-2731-48E7-AE912E6216D7">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:12:12 UTC</createdTime>
+<generatorID>318A2325-11B6-BAD5-C5B4-3FA91A728AF2</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4FFA91BC-4829-E324-EE56-4D3F23E20331" name="PK_GRV">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:13:33 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0AAF2C74-35A9-7648-506B-751346383548</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

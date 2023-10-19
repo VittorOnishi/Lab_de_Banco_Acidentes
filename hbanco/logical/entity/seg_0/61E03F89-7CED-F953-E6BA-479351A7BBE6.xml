@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="61E03F89-7CED-F953-E6BA-479351A7BBE6" name="hLocal">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:11:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro do kilometro onde se deu a ocorrencia do acidente de transito]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hlcl id" id="1E2CCF6A-384A-15DA-FD96-3FFC5AA1D31F">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:15:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela Local]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hlcl km" id="96E2032A-F518-C200-4A7E-B30F4937A621">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:15:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Kilometragem onde se deu a ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="htrc id" id="5E33DECE-0792-3F8A-85BB-F62D9649E4C8">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:27:36 UTC</createdTime>
+<generatorID>C6A63855-3EAD-A958-C5AD-9A5A4126D1AD</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<referedAttribute>27BD39F8-3A38-3F8B-0EB9-5AC8188558F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hlcl dt entrada" id="C0C31801-221B-24BD-F6ED-2569F15FA40B">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:12:12 UTC</createdTime>
+<generatorID>B4A8A1D3-E9C4-2449-81C2-677E39456488</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF7E7854-4211-A55E-EEC8-EBD997794651" name="PK_LCL">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:15:43 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E2CCF6A-384A-15DA-FD96-3FFC5AA1D31F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

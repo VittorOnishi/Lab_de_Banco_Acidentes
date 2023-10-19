@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A8E1D25E-F477-65A0-A5D6-B88C8B5BA793" name="hTipo de ocorrencia">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 02:51:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro dos tipos que uma ocorrencia pode  possuir]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="htdo id" id="F953304B-FE35-D488-80A8-17A105623ABE">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:14:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela de Tipo_de_ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="htdo descricao" id="A7D822A0-D100-1AF2-F8C0-BC425858718C">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:14:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo da ocorrencia]]></commentInRDBMS>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="htdo dt entrada" id="CCB1CF2D-826E-DE43-8A94-27D73DC2B1DA">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:12:12 UTC</createdTime>
+<generatorID>72FCE612-D591-11B1-5138-643D6D97E296</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA3167D7-AD9A-7CB2-AD88-16390E394DB8" name="PK_TDO">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:14:28 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AE930495-D1F6-7789-DBFA-FA8BFAA77215" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F953304B-FE35-D488-80A8-17A105623ABE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

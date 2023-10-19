@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6D1D184-8E6B-4B4E-2C6F-6575405C068F" name="hLocal">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabela para registro do kilometro onde se deu a ocorrencia do acidente de transito]]></commentInRDBMS>
+<generatorID>61E03F89-7CED-F953-E6BA-479351A7BBE6</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<ordsAlias>local</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hlcl_id" id="DE9D5073-5FF0-7A7F-93F1-1A753767B602">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave primaria da tabela Local]]></commentInRDBMS>
+<generatorID>1E2CCF6A-384A-15DA-FD96-3FFC5AA1D31F</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hlcl_km" id="59716787-357C-EBFD-0C10-58AA8DD360B1">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Kilometragem onde se deu a ocorrencia]]></commentInRDBMS>
+<generatorID>96E2032A-F518-C200-4A7E-B30F4937A621</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hlcl_dt_entrada" id="B4A8A1D3-E9C4-2449-81C2-677E39456488">
+<createdBy>vitto</createdBy>
+<createdTime>2023-10-04 00:10:59 UTC</createdTime>
+<ownerDesignName>hbanco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E58D61A-AECC-E7D6-0C66-6622049B0DCD" name="PK_HLCL">
+<createdBy>vitto</createdBy>
+<createdTime>2023-08-16 03:22:20 UTC</createdTime>
+<generatorID>DF7E7854-4211-A55E-EEC8-EBD997794651</generatorID>
+<ownerDesignName>hbanco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE9D5073-5FF0-7A7F-93F1-1A753767B602"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
